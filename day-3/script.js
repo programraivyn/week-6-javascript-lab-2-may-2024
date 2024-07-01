@@ -17,12 +17,18 @@ function partOneA () {
 
 // Try It!
 function partOneB () {
-  alert("Try it!");
   let friends 
   friends = [];
   // 1. TODO: Add your own friends to the array
+ friends[0] = "Anya";
+ friends[1] = "Britt";
+ friends[2] = "Calvin";
+ friends[3] = "Dez";
+ friends[4] = "Ellie";
+ friends[5] = "Felton";
 
   // 2. TODO: write your friends to the message
+messageParagraph.innerHTML = `Your friends are ${friends[0]}, ${friends[1]}, ${friends[2]}, ${friends[3]}, ${friends[4]}, and ${friends[5]}.`;
 
 }
 
@@ -51,8 +57,21 @@ function partTwoA () {
 function partTwoB () {
   let friends = [];
   // 1. Add your friends to the array
+  friends[0] = "Anya";
+  friends[1] = "Britt";
+  friends[2] = "Calvin";
+  friends[3] = "Dez";
+  friends[4] = "Ellie";
+  friends[5] = "Felton";
 
   // 2. write your friends to the innerHTML of the document
+messageParagraph.innerHTML = "Your friends are ";
+messageParagraph.innerHTML += `${friends[0]}`;
+messageParagraph.innerHTML += `, ${friends[1]}`;
+messageParagraph.innerHTML += `, ${friends[2]}`;
+messageParagraph.innerHTML += `, ${friends[3]}`;
+messageParagraph.innerHTML += `, ${friends[4]}`;
+messageParagraph.innerHTML += `, ${friends[5]}`;
 
 }
 
@@ -70,8 +89,10 @@ function partThreeA () {
 // Try prompting for a friend with a slightly different prompt or writing the message in a slightly different format.
 function partThreeB () {
   // 1. prompt for a friend
+  let friend = prompt(`Type in your best friend's name.`);
 
   // 2. add the friend to the message
+  messageParagraph.innerHTML += `, ${friend}`;
 }
 
 // Example
@@ -99,12 +120,11 @@ function partFourA () {
 // Now ask the user to enter their favorite ice cream flavors.
 let myFavFlavors = [];
 function partFourB () {
-  alert("Try it!");
   let totalFavFlavors, newFavFlavor;
   totalFavFlavors = myFavFlavors.length;
 
   // 1. prompt for a flavor
-
+// This section confused me. Will try again when I have a better understanding. - Raivyn B
   // 2. add the flavor to the array with push()
 
   // 3. add the flavor to the message
